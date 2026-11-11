@@ -17,8 +17,6 @@
   "appliesToTest": [
     "CIS_5_1_6_3",
     "EIDSCAAP04",
-    "EIDSCAAP07",
-    "SMB1001_2_8",
     "ZTNA21791"
   ],
   "recommendedBy": [],
@@ -56,6 +54,10 @@
   },
   "read": {
     "cacheType": "AuthorizationPolicy"
+  },
+  "writeTarget": "authorizationPolicy",
+  "writeTargetProperties": {
+    "allowInvitesFrom": "%allowInvitesFrom%"
   },
   "remediate": {
     "executor": "GraphRequest",
